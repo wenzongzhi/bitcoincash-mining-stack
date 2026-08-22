@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Py Service Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div>
+        <p class="eyebrow">PY SERVICE DASHBOARD</p>
+        <h1 id="plugin-name">Loading…</h1>
+        <p id="plugin-description" class="muted"></p>
+      </div>
+      <div id="state" class="state unknown">UNKNOWN</div>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Status</h2>
+        <dl id="status-list"></dl>
+      </article>
+      <article class="card">
+        <h2>Metrics</h2>
+        <div id="metrics" class="metrics"></div>
+      </article>
+    </section>
+
+    <section id="miners-card" class="card">
+      <div class="section-title">
+        <h2>Connected miners</h2>
+        <span id="miners-summary" class="muted"></span>
+      </div>
+      <div class="table-wrap">
+        <table class="miners-table">
+          <thead>
+            <tr>
+              <th>Worker</th>
+              <th>IP</th>
+              <th>Hashrate 5m</th>
+              <th>Diff</th>
+              <th>Best Diff</th>
+              <th>Last Submit</th>
+              <th>Accepted</th>
+              <th>Rejected</th>
+            </tr>
+          </thead>
+          <tbody id="miners-body"></tbody>
+        </table>
+        <div id="miners-empty" class="empty-state">No connected miners.</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Actions</h2>
+      <div id="actions" class="actions"></div>
+      <p id="actions-empty" class="muted">This plugin is read-only.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-title">
+        <h2>Recent logs</h2>
+        <span id="connection" class="muted">connecting…</span>
+      </div>
+      <pre id="logs" class="logs"></pre>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

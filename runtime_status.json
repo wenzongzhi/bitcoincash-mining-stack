@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "generated_at": 1786896726.6677,
+
+  "service": {
+    "id": "bitcoincash-stratum-proxy",
+    "version": "1.0",
+    "state": "running",
+    "pid": 15328,
+    "started_at": 1786890000.123,
+    "uptime_seconds": 6726.54
+  },
+
+  "stratum": {
+    "listen_host": "0.0.0.0",
+    "listen_port": 3333,
+    "max_miners": 20,
+    "default_difficulty": 2048,
+    "connected_miners": 3,
+    "subscribed_miners": 3,
+    "authorized_miners": 3
+  },
+
+  "node": {
+    "rpc_host": "127.0.0.1",
+    "rpc_port": 8332,
+    "gbt_poll_interval_seconds": 20,
+    "gbt_ok": true,
+    "last_gbt_at": 1786896719.23,
+    "last_gbt_error": null
+  },
+
+  "chain": {
+    "network": "mainnet",
+    "tip_height": 999998,
+    "template_height": 999999,
+    "previous_block_hash": "000000000000000000...",
+    "bits": "180170da",
+    "network_difficulty": 825673821234.5,
+    "template_tx_count": 1842,
+    "current_job_id": "18b7....",
+    "last_job_at": 1786896702.15
+  },
+
+  "summary": {
+    "hashrate": {
+      "1m_hs": 14430000000000,
+      "5m_hs": 14370000000000,
+      "15m_hs": 14290000000000
+    },
+    "best_difficulty": 88347231.62,
+    "shares_submitted_total": 9321,
+    "shares_accepted_total": 9308,
+    "shares_rejected_total": 13,
+    "block_candidates_total": 0,
+    "blocks_accepted_total": 0
+  },
+
+  "miners": [
+    {
+      "connection_id": "192.168.2.101:53122",
+      "remote_ip": "192.168.2.101",
+      "remote_port": 53122,
+
+      "connected_at": 1786890123.15,
+      "connected_seconds": 6603.4,
+
+      "subscribed": true,
+      "authorized": true,
+
+      "worker_name": "bitaxe-01",
+      "payout_address": "bitcoincash:q...",
+
+      "difficulty": 2048,
+      "current_job_id": "18b7....",
+
+      "last_submit_at": 1786896724.12,
+      "last_accepted_at": 1786896724.13,
+      "last_rejected_at": null,
+
+      "shares": {
+        "submitted": 3121,
+        "accepted": 3119,
+        "rejected": 2,
+        "rejected_by_reason": {
+          "low_difficulty": 1,
+          "stale": 1
+        }
+      },
+
+      "last_share_difficulty": 12483.12,
+      "best_difficulty": 15382932.44,
+
+      "hashrate": {
+        "1m_hs": 4210000000000,
+        "5m_hs": 4170000000000,
+        "15m_hs": 4190000000000
+      },
+
+      "block_candidates": 0,
+      "blocks_accepted": 0
+    }
+  ]
+}
